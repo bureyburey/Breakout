@@ -1,0 +1,69 @@
+body {
+    
+}
+
+#myCanvas{
+    border:solid black 1px;
+}
+
+#gameInfoContainer{
+    font-family:'Press Start 2P',"Times New Roman";
+    font-size:6px;
+   left:5%;
+   top:0%;
+}
+#showScoreboard{
+    background-color:green;
+    border-radius:50%;
+    border:solid 3px red;
+    font-size:13px;
+}
+#gameHUD{
+    margin-top:0px;
+    width:100%;
+}
+#newGame{
+    left:5%;
+    background-color:green;
+    border-radius:50%;
+    border:solid 3px lightgreen;
+    color:white;
+    font-size:15px;
+}
+
+#gameEvent{
+    font-family:'Press Start 2P',"Times New Roman";
+    font-size:6px;
+    /*left:5%;*/
+    float:left;
+    top:0%;
+}
+#fireCannon{
+    position:relative;
+   float:right;
+   background-color:red;
+   border-radius:50%;
+   border:solid 3px orange;
+   /*position:absolute;*/
+   font-size:20px;
+}
+#debugMenu{
+    display:none;
+    margin-top:0px;
+}
+input[type=range][orient=vertical]
+{
+    writing-mode: bt-lr; /* IE */
+    -webkit-appearance: slider-vertical; /* WebKit */
+    width: 1px;
+    padding: 0 0px;
+}
+
+button{
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
