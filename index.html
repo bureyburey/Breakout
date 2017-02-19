@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Breakout</title>
+        <script src="https://www.gstatic.com/firebasejs/3.6.8/firebase.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+        <script src="https://cdn.rawgit.com/bureyburey/Scoreboard-Module/master/scoreboard.js"></script> 
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+    <body bgcolor='lightblue'>
+        <div id="gameInfoContainer"><button id="showScoreboard">Scoreboard</button> [Lvl: <label id="levelValue">?</label>] [Score: <label id="scoreValue">?</label>] [❤︎: <label id="livesValue">?</label>]</div>
+        
+        <table>
+        <tr>
+        <td>
+        <canvas id='myCanvas'></canvas>
+        </td>
+        <td>
+        <table id="xOffsetSettings">
+        <tr><td>
+        <label id="xOffsetValue">?</label>
+        </td></tr>
+        <tr><td>
+        <input id="xOffset" type="range" orient="vertical" value="4" min="1" max="10" />
+        </td></tr>
+        </table>
+        </td>
+        </tr>
+        </table>
+        
+        <table id="gameHUD">
+        <tr><td>
+        <button id="newGame">New Game</button>
+        </td><td>
+        <label id='gameEvent'></label>
+        </td><td>
+        <button id='fireCannon' style="display:none;">FIRE</button>
+        </td></tr>
+        </table>
+        
+        <span id="debugMenu">
+            <label>Auto Play: <input id="autoTest" type="checkbox"></label>
+            <label>Predictive Lines: <input id="predictiveLine" type="checkbox"></label> 
+            <button id="increaseLevel">Inc</button>
+        </span>
+        
+        
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDgaQMD6XnYfzTgQ62iyfRdGTZkMFB71gg",
+    authDomain: "breakout-a687c.firebaseapp.com",
+    databaseURL: "https://breakout-a687c.firebaseio.com",
+    storageBucket: "breakout-a687c.appspot.com",
+    messagingSenderId: "818046655213"
+  };
+  firebase.initializeApp(config);
+</script>
+    </body>
+</html>
